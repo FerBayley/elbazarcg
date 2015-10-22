@@ -1,41 +1,116 @@
-<!DOCTYPE html>
-<html lang="es-Ar">
-<head>
-	<meta charset="UTF-8">
-	<title>El Bazar CG</title>
-	<!-- METAVP -->
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<!-- METAVP -->	
-	<!-- CSS -->
-	<link rel="stylesheet" href="public/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="public/css/main.css" />
-	<!-- CSS -->
+<?php 
+/*
+Template name: catalogo
+*/
+?>
 
-	<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
-<body>
+<?php get_header('interno'); ?>
 
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 Def-seccion">
+				<p><span>Estas en la secci&oacute;n:</span> Catalogo</p>
+			</div> <!-- End of Def-seccion -->
+		</div> <!-- End of row -->
+	</div> <!-- End of container -->
 
-	<div class="Contenedor-logo">
-		<a href="index.php">
-			<img src="public/images/logo.png" width="191" height="191" class="Card-logo" alt="El Bazar Conceptos Gastronomicos">
-		</a>
-	</div> <!-- End of Contenedor-logo -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 Productos-categoria">
+				<ul>
+					<?php wp_nav_menu(
+						array(
+						'container' =>false,
+						'items_wrap' => '<ul id="menu-top">%3$s</ul>',
+						'theme_location' => 'productos'
+					));	?>
+				</ul>
+			</div> <!-- End of Productos-categoria -->
+		</div> <!-- End of row -->
+	</div> <!-- End of container -->
 
-	<div class="Contenedor-texto">
-		<article>
-			<p>Estamos trabajando en el desarrollo de esta sección</p>
-			<p>Pronto estaremos on line, muchas gracias</p>
-		</article>
-	</div> <!-- End of Contenedor-texto -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="Columnas-titulo">Catalogo</h2>
+			</div>
+		</div> <!-- End of row -->
+	</div> <!-- End of container -->
 
-	<div class="Pie">
-		<article>
-			<p>Contacto:<a href="mailto:Contacto:administracion@elbazarcg.com"> administracion@elbazarcg.com</a></p>
-		</article>
-	</div> <!-- End of pie -->
-	
-</body>
-</html>
+	<div class="container Columnas">
+		<div class="row">
+			<div class="col-md-3 Col">
+				<?php query_posts('category_name=catalogo-1'); ?>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<!-- <h2 class="Col1-categoria Categorias"><?php the_tags(' ', ', ', ''); ?></h2> -->
+
+				<div class="thumb">
+					<?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'columna_destacados' ); } ?>
+				</div> <!-- End of thumb -->
+
+				<h2 class="Col-titulo"><?php the_title(); ?>
+				</h2>
+				<article class="Col-descripcion"><p><?php the_excerpt(); ?></p></article>
+				<div class="Separato"></div>
+				<?php endwhile; else: ?>				
+					<h6 class="Nofind">No se encontraron productos en este catalogo</h6>
+				<?php endif; ?>
+			</div> <!-- End of Col -->
+
+			<div class="col-md-3 Col">
+				<?php query_posts('category_name=catalogo-2'); ?>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<!-- <h2 class="Col1-categoria Categorias"><?php the_tags(' ', ', ', ''); ?></h2> -->
+
+				<div class="thumb">
+					<?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'columna_destacados' ); } ?>
+				</div> <!-- End of thumb -->
+
+				<h2 class="Col-titulo"><?php the_title(); ?>
+				</h2>
+				<article class="Col-descripcion"><p><?php the_excerpt(); ?></p></article>
+				<div class="Separato"></div>
+				<?php endwhile; else: ?>				
+					<h6 class="Nofind">No se encontraron productos en este catalogo</h6>
+				<?php endif; ?>
+			</div> <!-- End of Col -->
+
+			<div class="col-md-3 Col">
+				<?php query_posts('category_name=catalogo-3'); ?>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<!-- <h2 class="Col1-categoria Categorias"><?php the_tags(' ', ', ', ''); ?></h2> -->
+
+				<div class="thumb">
+					<?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'columna_destacados' ); } ?>
+				</div> <!-- End of thumb -->
+
+				<h2 class="Col-titulo"><?php the_title(); ?>
+				</h2>
+				<article class="Col-descripcion"><p><?php the_excerpt(); ?></p></article>
+				<div class="Separato"></div>
+				<?php endwhile; else: ?>				
+					<h6 class="Nofind">No se encontraron productos en este catalogo</h6>
+				<?php endif; ?>
+			</div> <!-- End of Col -->
+
+			<div class="col-md-3 Col">
+				<?php query_posts('category_name=catalogo-4'); ?>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<!-- <h2 class="Col1-categoria Categorias"><?php the_tags(' ', ', ', ''); ?></h2> -->
+
+				<div class="thumb">
+					<?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'columna_destacados' ); } ?>
+				</div> <!-- End of thumb -->
+
+				<h2 class="Col-titulo"><?php the_title(); ?>
+				</h2>
+				<article class="Col-descripcion"><p><?php the_excerpt(); ?></p></article>
+				<div class="Separato"></div>
+				<?php endwhile; else: ?>				
+					<h6 class="Nofind">No se encontraron productos en este catalogo</h6>
+				<?php endif; ?>
+			</div> <!-- End of Col -->
+		</div> <!-- End of row -->
+	</div> <!-- End of container -->
+
+<?php get_footer('internas'); ?>

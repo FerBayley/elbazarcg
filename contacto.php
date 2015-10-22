@@ -1,41 +1,65 @@
-<!DOCTYPE html>
-<html lang="es-Ar">
-<head>
-	<meta charset="UTF-8">
-	<title>El Bazar CG</title>
-	<!-- METAVP -->
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<!-- METAVP -->	
-	<!-- CSS -->
-	<link rel="stylesheet" href="public/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="public/css/main.css" />
-	<!-- CSS -->
+<?php 
+/*
+Template name: contacto
+*/
+?>
 
-	<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
-<body>
+<?php get_header('interno'); ?>
 
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="Columnas-tituloMarcas">Contacto</h2>
+			</div>
+		</div> <!-- End of row -->
+	</div> <!-- End of container -->
 
-	<div class="Contenedor-logo">
-		<a href="index.php">
-			<img src="public/images/logo.png" width="191" height="191" class="Card-logo" alt="El Bazar Conceptos Gastronomicos">
-		</a>
-	</div> <!-- End of Contenedor-logo -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 Texto-contacto">
+				<article>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus asperiores totam vero 
+						fugit placeat laboriosam, nam quis doloribus necessitatibus unde fuga nemo impedit. 
+						Porro, eligendi unde dignissimos, molestiae error suscipit.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus asperiores totam vero 
+						fugit placeat laboriosam, nam quis doloribus necessitatibus unde fuga nemo impedit. 
+						Porro, eligendi unde dignissimos, molestiae error suscipit.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus asperiores totam vero 
+						fugit placeat laboriosam, nam quis doloribus necessitatibus unde fuga nemo impedit. 
+						Porro, eligendi unde dignissimos, molestiae error suscipit.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus asperiores totam vero 
+						fugit placeat laboriosam, nam quis doloribus necessitatibus unde fuga nemo impedit. 
+						Porro, eligendi unde dignissimos, molestiae error suscipit.
+					</p>
+				</article>
+			</div> <!-- End of Col-6 -->
 
-	<div class="Contenedor-texto">
-		<article>
-			<p>Estamos trabajando en el desarrollo de esta sección</p>
-			<p>Pronto estaremos on line, muchas gracias</p>
-		</article>
-	</div> <!-- End of Contenedor-texto -->
+			<div class="col-md-6">
+				<form role="form">
+					<div class="form-group">
+					   <label for="ejemplo_email_1">Email</label>
+					   <input type="email" class="form-control" id="ejemplo_email_1" placeholder="Introducir email">
+					</div> <!-- End of form-group -->
 
-	<div class="Pie">
-		<article>
-			<p>Contacto:<a href="mailto:Contacto:administracion@elbazarcg.com"> administracion@elbazarcg.com</a></p>
-		</article>
-	</div> <!-- End of pie -->
-	
-</body>
-</html>
+					<div class="form-group">
+					  <label for="ejemplo_password_1">Nombre</label>
+					  <input type="password" class="form-control" id="ejemplo_password_1" placeholder="Ingresar Email">
+					</div> <!-- End of form-group -->
+ 					<button type="submit" class="btn btn-default">Enviar</button>
+				</form> <!-- End of form -->
+
+				<div class="Mapa">
+					<h3>Aca va el mapa</h3>
+				</div> <!-- End of Mapa -->
+			</div> <!-- End of col-md-6 -->
+		</div> <!-- End of row -->
+	</div> <!-- End of container -->
+
+<?php get_footer('internas'); ?>

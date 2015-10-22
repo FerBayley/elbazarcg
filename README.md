@@ -1,1 +1,1 @@
-# elbazarcg
+Sitio desarrollado para la empreza ElBazarCg
