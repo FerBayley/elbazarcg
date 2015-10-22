@@ -16,22 +16,6 @@ Template name: queines-somos
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 Productos-categoria">
-				<ul>
-					<li><span>PRODUCTOS POR CATEGORIA:</span></li>
-					<li><a href="#">CRISTALERIA</a></li>
-					<li><a href="#">FRIO</a></li>
-					<li><a href="#">PLASTICOS</a></li>
-					<li><a href="#">CAFETERIA</a></li>
-					<li><a href="#">BAR</a></li>
-					<li><a href="#">VAJILLA</a></li>
-				</ul>
-			</div> <!-- End of Productos-categoria -->
-		</div> <!-- End of row -->
-	</div> <!-- End of container -->
-
-	<div class="container">
-		<div class="row">
 			<div class="col-md-12">
 				<h2 class="Columnas-titulo">Quienes somos?</h2>
 			</div> <!-- End of col-md-12 -->

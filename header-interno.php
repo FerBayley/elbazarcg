@@ -38,8 +38,8 @@
 	<div class="container-fluid Menu-paginas">
 		<div class="row">
 			<div class="col-md-1">
-				<a href="#">
-					<img src="<?php bloginfo('template_directory'); ?>/public/images/logo-interno.png" width="99" height="99" alt="El Bazar CG - Concepto Gastronomicos">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<img src="<?php bloginfo('template_directory'); ?>/public/images/logo-interno.png" width="99px" height="99px" class="Interno-img" alt="El Bazar CG - Concepto Gastronomicos">
 				</a>
 			</div>
 
